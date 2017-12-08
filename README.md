@@ -10,7 +10,7 @@ I'm still working on it.After collecting a indoor pointcloud set with Kinect or 
 cause there are too much unuseful data.After this, we just need to calculate how many big planes in the set and their equations.I keep hundreds of points for each plane.
 
 o0 and o1 are pointcloud sets of some walls of the buildings. MapPoints1 is teaching buliding pointcloud set that after simplification. The plane calculation is mainly use the RANSAC, I used to try the efficient RANSAC(which can evaluate the shape of each part of the set), however, it was unsuitable for my work,pre-calculation can not provide great help to a simple map set(mainly formed by a number of planes).
-Firstdata is the result of traditional RANSAC, Mapdata1.xyz is the result of multi-plane-detect RANSAC.
+Firstdata is the result of traditional RANSAC searching the biggest plane, Mapdata1.xyz is the result of multi-plane-detect RANSAC.
 
 There are two problems now.
 One is the outline of the plane, I am adding it to my program now and using OpenCV can make this solved.
